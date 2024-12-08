@@ -1,4 +1,3 @@
-
 # Blogtopia
 
 **Blogtopia** is a blogging platform built with modern web technologies. It allows users to create, edit, and delete their blogs and enables other users to comment on these blogs. This project demonstrates the power of server-side actions with Next.js, efficient database management with Drizzle ORM, and modern UI components using ShadCN and Tailwind CSS.
@@ -50,17 +49,20 @@ Check out the live version: [Blogtopia](https://blogtopia-mu.vercel.app/)
 ## 🛠️ Installation and Setup
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/blogtopia.git
 cd blogtopia
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Configure Environment Variables
+
 Create a `.env.local` file in the root directory and copy the following environment variables:
 
 ```env
@@ -75,24 +77,31 @@ POSTGRES_URL_NON_POOLING="postgres://<your-user>:<your-password>@<your-host>/<yo
 Replace `<your-user>`, `<your-password>`, `<your-host>`, and `<your-database>` with your PostgreSQL database credentials.
 
 ### 4. Set Up the Database
+
 #### Generate the schema
+
 ```bash
 npm run db:generate
 ```
 
 #### Apply migrations
+
 ```bash
 npm run db:migrate
 ```
 
 #### (Optional) Start Drizzle Studio
+
 For a graphical interface to manage your database:
+
 ```bash
 npm run db:studio
 ```
 
 ### 5. Run the Application
+
 Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -102,21 +111,22 @@ The application will be available at [http://localhost:3000](http://localhost:30
 ## 🛠️ Deployment
 
 The project is deployed on Vercel. To deploy the project manually:
+
 1. Connect your GitHub repository to Vercel.
 2. Add the necessary environment variables in the Vercel dashboard.
 3. Vercel will automatically build and deploy your application.
 
 ## ⚙️ Commands
 
-| Command            | Description                                    |
-|--------------------|------------------------------------------------|
-| `npm run dev`      | Start the development server                  |
-| `npm run build`    | Build the project for production              |
-| `npm run start`    | Start the production server                   |
-| `npm run lint`     | Run the linter to check code quality          |
-| `npm run prettier` | Format code with Prettier                     |
-| `npm run db:generate` | Generate database schema                  |
-| `npm run db:migrate`  | Apply database migrations                 |
+| Command               | Description                                |
+| --------------------- | ------------------------------------------ |
+| `npm run dev`         | Start the development server               |
+| `npm run build`       | Build the project for production           |
+| `npm run start`       | Start the production server                |
+| `npm run lint`        | Run the linter to check code quality       |
+| `npm run prettier`    | Format code with Prettier                  |
+| `npm run db:generate` | Generate database schema                   |
+| `npm run db:migrate`  | Apply database migrations                  |
 | `npm run db:push`     | Push the schema to the database            |
 | `npm run db:studio`   | Open Drizzle Studio to manage the database |
 
