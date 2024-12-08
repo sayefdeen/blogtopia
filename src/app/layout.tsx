@@ -25,7 +25,7 @@ export default async function RootLayout({
   return (
     <html className={cn('h-full min-h-full scroll-smooth antialiased')} lang="en">
       <body className="min-h-dvh">
-        <NextTopLoader color="#16a34a" showSpinner={false} shadow="none" />
+        <NextTopLoader color="#7fc7d9" showSpinner={false} shadow="none" />
         <main className="min-h-screen bg-muted/40">
           <SessionProvider session={session}>{children}</SessionProvider>
           <Toaster />
