@@ -1,0 +1,32 @@
+import {
+  LogOut,
+  User,
+  Loader,
+  Trash,
+  Slash,
+  Pen,
+  CirclePlus,
+  Settings,
+  MessageSquareText,
+  LayoutDashboard,
+  X,
+  Eye,
+  CircleUser,
+  type LucideIcon,
+} from 'lucide-react';
+
+export const Icons: Record<string, LucideIcon> = {
+  logout: LogOut,
+  loader: Loader,
+  trash: Trash,
+  user: User,
+  slash: Slash,
+  settings: Settings,
+  plus: CirclePlus,
+  pen: Pen,
+  dashboard: LayoutDashboard,
+  commenting: MessageSquareText,
+  delete: X,
+  view: Eye,
+  profile: CircleUser,
+};
